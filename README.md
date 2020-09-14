@@ -36,4 +36,4 @@ but you would need a physical apple/android device, and to download the [Expo ap
 
 ## Challenges
 
-React Native is definitely growing, but there was some limitations I encountered for example the [Modals](https://reactnative.dev/docs/modal) aren't supported for the Web at the moment. There are some open source community projects that I could've but none out of the box. I ended up just creating my own version by doing a view overlay with a faded backgrounded.
+React Native is definitely growing, but there was some limitations I encountered for example the [Modals](https://reactnative.dev/docs/modal) aren't supported for the Web at the moment. There are some open source community projects that I could've used but none out of the box. I ended up just creating my own version by doing a view overlay with a faded backgrounded.
