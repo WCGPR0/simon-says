@@ -29,7 +29,7 @@ but you would need a physical apple/android device, and to download the [Expo ap
 ## Bugs / Todos
 
 * Haven't tested for iPhones, but for Androids, did notice the attempt for nested pointevents in the views isn't working correctly.
-* Also the Web component isn't very responsive to smaller devices. I'ved used absolute positioning to the window, which I don't think is ideal and can be improved.
+* Also the Web component isn't very responsive to smaller devices (such as iPhone 5, Galaxy S5, iPhone non-Plus). Since there's no direct media queries, we could use [react-native-css-media-query-processor](https://github.com/kristerkari/react-native-css-media-query-processor) to create responsive styling. I'ved also used absolute positioning to the window, which I don't think is ideal and can be improved.
 * The UI could also use some polishing.
 * I started with [Stylesheets.create](https://reactnative.dev/docs/stylesheet) but ended with inline styling becuase it was faster. Ideally, I would like to refactor more of the inline styling to Stylesheets.
 * I wrote everything under one view, but I think this could be refactored and split into multiple components, and use [redux](https://redux.js.org/) for the deterministic state management. Redux isn't something I've used yet, so wasn't sure of the learning curve here.

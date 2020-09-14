@@ -66,10 +66,8 @@ export default function App() {
       setHeight(height);
     }}>
       <StatusBar style="auto" />
-      <Text style={{ position: 'absolute', top: 100, left: 100, fontSize: 40, color: '#000' }}>
-        Level: {seq.length}
-      </Text>
-      <Text style={{ position: 'absolute', top: 200, left: 100, fontSize: 40, color: '#000' }}>
+      <Text style={{ position: 'absolute', top: '10%', left: '10%', fontSize: 40, color: '#000' }}>
+        Level: {seq.length} <br />
         Score: {score}
       </Text>
       <TouchableOpacity
