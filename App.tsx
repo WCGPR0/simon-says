@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Dimensions, FlatList } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions, FlatList, TextInput, Keyboard } from 'react-native';
 
 export default function App() {
   const [modalVisible, setModalVisible] = useState<boolean>(true);
@@ -125,8 +125,16 @@ export default function App() {
       </View> 
       }
       <Text>
-        Welcome to Simon Says! Click or tap to continue...
+        Welcome to Simon Says!
       </Text>
+      <TextInput
+        autoFocus
+        onFocus={() => Keyboard.dismiss()}
+        onKeyPress={ (e) => { if (e.nativeEvent.key === ' ') { setModalVisible(false); playSeq();} } } 
+        placeholder="Click, tap, or press space to continue..."
+        editable = {false}
+        style= {{ width: '100%', textAlign: 'center', justifyContent: 'center' }}
+        />
       </View>
       </TouchableOpacity>
       }
