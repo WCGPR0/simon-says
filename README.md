@@ -32,7 +32,7 @@ but you would need a physical apple/android device, and to download the [Expo ap
 * Also the Web component isn't very responsive to smaller devices. I'ved used absolute positioning to the window, which I don't think is ideal and can be improved.
 * The UI could also use some polishing.
 * I started with [Stylesheets.create](https://reactnative.dev/docs/stylesheet) but ended with inline styling becuase it was faster. Ideally, I would like to refactor more of the inline styling to Stylesheets.
-* I wrote everything under one view, but I think this could be refactored and split into multiple components, and use [redux](https://redux.js.org/) for the deterministic state management.
+* I wrote everything under one view, but I think this could be refactored and split into multiple components, and use [redux](https://redux.js.org/) for the deterministic state management. Redux isn't something I've used yet, so wasn't sure of the learning curve here.
 
 ## Challenges
 
